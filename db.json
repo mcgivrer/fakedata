@@ -1,0 +1,60 @@
+{
+	"users": [
+		{	"id":1,
+			"username":"user1",
+			"email":"user1.familyname1@mail.org",
+			"firstname":"User1",
+			"lastname":"Familyname1",
+			"createdAt":"2020-06-29T14:30:00.000",
+			"profiles":["admin","owner","developer"]
+			"active":true},
+		{	"id":2,
+			"username":"user2",
+			"email":"user2.familyname2@mail.org",
+			"firstname":"User2",
+			"lastname":"Familyname2",
+			"createdAt":"2020-06-29T14:30:00.000",
+			"profiles":["owner"]
+			"active":true},
+		{	"id":3,
+			"username":"user3",
+			"email":"user3.familyname3@mail.org",
+			"firstname":"User3",
+			"lastname":"Familyname3",
+			"createdAt":"2020-06-29T14:30:00.000",
+			"profiles":["developer"],
+			"active":true}
+	],
+	"states": [
+		{"id":1,"title":"Backlog","prev":0},
+		{"id":2,"title":"ToDo","prev":1},
+    {"id":3,"title":"WIP","prev":2},
+    {"id":4,"title":"Test","prev":3},
+    {"id":5,"title":"Done","prev":4},
+    {"id":6,"title":"Fridge","prev":5}
+	],
+	"projects": [
+		{	"id":1,
+			"title":"Project 1",
+			"description":"This is a first project", 
+			"startAt":"2020-06-29T14:30:00.000", 
+			"endAt":"2020-07-29T14:30:00.000", 
+			"active":true}
+	],
+	"tasks": [
+		{"id":1,"projectId":1,"title":"Task 1","description":"This is task 1","userId":1,"createdAt":"2020-06-29T14:30:00.000","state":1},
+		{"id":2,"projectId":1,"title":"Task 2","description":"This is task 2","userId":1,"createdAt":"2020-06-29T14:30:00.000","state":1},
+		{"id":3,"projectId":1,"title":"Task 3","description":"This is task 3","userId":1,"createdAt":"2020-06-29T14:30:00.000","state":2},
+		{"id":4,"projectId":1,"title":"Task 4","description":"This is task 4","userId":1,"createdAt":"2020-06-29T14:30:00.000","state":2},
+		{"id":5,"projectId":1,"title":"Task 5","description":"This is task 5","userId":1,"createdAt":"2020-06-29T14:30:00.000","state":5},
+		{"id":6,"projectId":1,"title":"Task 6","description":"This is task 6","userId":1,"createdAt":"2020-06-29T14:30:00.000","state":6}
+	],
+  "comments": [
+		{"id":1,"taskId":1,"title":"Comment 1 on tasks 1","description":"This is a comment on Task 1","parentId":0},
+		{"id":2,"taskId":1,"title":"Comment 2 on tasks 1","description":"This is a comment on Task 1","parentId":1},
+		{"id":1,"taskId":1,"title":"Comment 3 on tasks 1","description":"This is a comment on Task 1","parentId":2},
+		{"id":1,"taskId":2,"title":"Comment 1 on tasks 2","description":"This is a comment on Task 2","parentId":0}
+	],
+	"logs": [
+	]
+}
